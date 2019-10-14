@@ -1,0 +1,90 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "Message360": {
+      "type": "object",
+      "properties": {
+        "ResponseStatus": {
+          "type": "integer"
+        },
+        "Carrier": {
+          "type": "object",
+          "properties": {
+            "ApiVersion": {
+              "type": "string"
+            },
+            "CarrierSid": {
+              "type": "string"
+            },
+            "AccountSid": {
+              "type": "string"
+            },
+            "PhoneNumber": {
+              "type": "string"
+            },
+            "Network": {
+              "type": "string"
+            },
+            "Wireless": {
+              "type": "string"
+            },
+            "ZipCode": {
+              "type": "string"
+            },
+            "Zips": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "string"
+                }
+              ]
+            },
+            "State": {
+              "type": "string"
+            },
+            "City": {
+              "type": "string"
+            },
+            "Status": {
+              "type": "string"
+            },
+            "DateCreated": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "ApiVersion",
+            "CarrierSid",
+            "AccountSid",
+            "PhoneNumber",
+            "Network",
+            "Wireless",
+            "ZipCode",
+            "Zips",
+            "State",
+            "City",
+            "Status",
+            "DateCreated"
+          ]
+        }
+      },
+      "required": [
+        "ResponseStatus",
+        "Carrier"
+      ]
+    }
+  },
+  "required": [
+    "Message360"
+  ]
+}
